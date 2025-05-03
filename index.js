@@ -30,7 +30,7 @@ app.use((req, res, next) => {
     
 })
 
-mongoose.connect("mongodb+srv://Admin:12345@cluster0.7crae.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://vihass:123@cluster0.7crae.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 .then(()=>{
     console.log("Connected to database");
 }).catch(()=>{
