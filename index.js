@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import productRouter from './routes/productRouter.js';
 import userRouter from './routes/userRouter.js';
 import  Jwt from 'jsonwebtoken';
+import orderRouter from './routes/orderRouter.js';
 
 
 
@@ -40,6 +41,7 @@ mongoose.connect("mongodb+srv://vihass:123@cluster0.7crae.mongodb.net/?retryWrit
 
 app.use('/product', productRouter);
 app.use('/user', userRouter);
+app.use('/order', orderRouter);
 
 
 app.listen(5000, ()=>{
